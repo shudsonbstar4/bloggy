@@ -1,0 +1,134 @@
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+	color:red; 
+	text-decoration:none; 
+	transition: opacity 1s;
+}
+	
+a:hover {
+	opacity: 0.5; 
+	transition: opacity 1s;
+}
+
+a:focus {
+	opacity: 0.5; 
+	transition: opacity 1s;
+}
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+table, .entry-wrapper, .comments {
+	padding: 20px;
+	margin:20px 0;
+	background-color: #fff;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	border:1px solid #e5e5e5;
+	width:100%;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.1)
+}
+
+td {
+	margin: 20px 0;
+}
+
+.blog-title, .name {
+	font: 25px 'Yanone Kaffeesatz', sans-serif; 
+	font-weight:700;
+	text-transform:uppercase;
+	border-bottom:2px dotted #e1e1e1;
+}
+
+.blog-content{
+	font-family: "Lucida Grande", sans-serif; 
+	padding-top:1em;
+
+}
+
+.edit-links {
+	margin:1em 0 3em 0;
+	padding-left: 0;
+}
+
+.edit-links a {
+	font: 13px "Lucida Grande", sans-serif;
+	text-transform: none;
+}
+
+.divider {
+	color:red;
+	border: 2px solid red;
+	margin-bottom:3em;
+}
+
+.tags {
+	background-color: #000;
+	border-radius: 20px;
+	-webkit-border-radius:20px;
+	-moz-border-radius: 20px;
+	color: #fff;
+	padding:10px;
+}
+
+/*.edit-links  li {
+	background-color:green;
+	padding:10px;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+}
+
+.edit-links a {
+	color:#fff;
+}*/

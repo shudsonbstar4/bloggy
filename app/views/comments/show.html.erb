@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @comment.name %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @comment.content %>
+</p>
+
+<%= link_to 'Edit', edit_comment_path(@comment) %> | <!--can use @comment.blog_id b/c of the relationship between DB -->
+<!-- Same^^ as <%= link_to 'Edit', edit_comment_path(:id => @comment.id) %>-->
+<%= link_to 'Back', comments_path %>

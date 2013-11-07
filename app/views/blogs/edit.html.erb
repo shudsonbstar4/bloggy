@@ -1,0 +1,15 @@
+<h1>Editing blog</h1>
+
+<%= render 'form' %>
+<hr class="divider" />
+<h3>Tags</h3>
+	<% @blog.tags.each do |tag| %>
+		<li class="tags"><%= tag.name %>&nbsp;<%= link_to 'x', tag, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+	<% end %>
+
+<%= render 'tags/form' %>
+
+
+
+<%= link_to 'Show', @blog %> |
+<%= link_to 'Back', blogs_path %>

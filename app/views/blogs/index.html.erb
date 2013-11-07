@@ -1,0 +1,60 @@
+<h1>Listing blogs</h1>
+
+<h3>Tags</h3>
+	<% @tags.each do |t| %>
+		<li class="tags">	<%= link_to t.name, blogs_path(:name => t.name) %></li>
+	<% end %>
+
+	<!-- If you put an ACTION in here (similar to recursion), then you could call the index method and get it to execute on the page. Would not need query strings-->
+	
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @blogs.each do |blog| %>
+  <tr>
+    <td class="blog-title"><%= blog.title %></td>
+	</tr>
+	<tr>
+		<td>
+			<ul>
+			<li><strong>Tags:</strong></li>
+			<% blog.tags.each do |tag| %>
+				<li class="tags"><%= tag.name %></li>
+			<% end %>
+			</ul>
+</td>
+	</tr>
+		<tr>
+	<!--<td><%= blog.created_at.strftime('%m/%d/%Y %H:%M') %></td>-->
+	<td><%= time_ago_in_words(blog.created_at) %> ago</td>
+	</tr>
+	<tr>
+		<td></td>
+	</tr>
+	<tr>
+    <td class="blog-content"><%= blog.content %></td>
+	</tr>
+	<tr>
+    <td>
+		<ul class="edit-links">
+			<li><%= link_to 'Show', blog %></li>
+			<li><%= link_to 'Edit', edit_blog_path(blog) %></li>
+			<li><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+		
+		</ul></td>
+	</tr>
+	<tr>
+	<td><hr class="divider" /></td>
+	</tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Blog', new_blog_path, :class => "btn" %>

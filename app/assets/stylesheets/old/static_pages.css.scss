@@ -1,0 +1,59 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+}
+
+body {
+background-color:#f1f1f2; 
+}
+
+.wrapper {width:70%; margin:0 auto;}
+h1, h2, h3, h4, h5, h6 {font-family: 'Yanone Kaffeesatz', sans-serif; text-transform:uppercase;}
+h1 {color:#030303;}
+h2 {color: #ff00ff; font-size:15px;}
+#paragraph {color: #323232;font-family: Verdana; margin-bottom: 30px; font-size:14px; display:none;}
+input.button {background-color:#ffff00; padding:5px; border-radius:10px}
+nav {float:right}
+li {display:inline-block;list-style-type:none; margin-right:20px; font-size:18px}
+li > a {color:red;}
+li > a:hover {color:pink}
+li > a:focus {color:pink}
+#top-bar{display:block; background-color:black; padding:5px; height:3em;}
+#top-bar > a {color:white;}
+button {background-color:green; padding:10px; border-radius:10px;color:white;}
+
+/*footer {
+clear:both;
+bottom:0px;
+position:absolute;
+height:auto;
+
+padding:20px; 
+left:0;
+right:0;
+margin-top:50px;
+}*/
+
+/*footer{
+  height: 70px;
+	width:100%;
+  clear: both;
+  position: fixed;
+  bottom: 0;
+	left:0;
+	background-color:black; 
+	color:white; 
+}*/
+
+/*footer{
+	position:absolute;
+	width:100%;
+	bottom:0;
+	height:75px;
+}*/
+

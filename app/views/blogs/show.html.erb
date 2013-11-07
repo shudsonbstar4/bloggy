@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<div class="entry-wrapper">
+<p class="blog-title">
+  <%= @blog.title %>
+</p>
+
+<p class="blog-content">
+  <%= @blog.content %>
+</p>
+<hr class="divider" />
+	<h3>Tags</h3>
+	<% @blog.tags.each do |tag| %>
+		<li class="tags"><%= tag.name %></li>
+	<% end %>
+	<br />
+<br />
+
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blogs_path %>
+</div>
+
+<br />
+<br />
+<%= link_to 'Comment', new_comment_path(:blog_id => @blog.id), :class=>'btn' %>
+
+<br />
+<br />
+
+<div class="comments">
+	
+	<% @comments.each do |comment| %>
+		<h3 class="name"><%= comment.name %></h3>
+		<%= comment.created_at.strftime('%m/%d/%Y %H:%M') %><br />
+		<%= comment.content %><br /><br />
+		<hr class="divider" />
+	<% end %>
+
+</div>
+

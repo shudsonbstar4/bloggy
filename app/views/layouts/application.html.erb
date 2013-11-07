@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bloggy - My Favorite Blog</title>
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+	<%= javascript_include_tag "application" %>
+
+	<%= stylesheet_link_tag "application.css", :media => "all" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="container">
+<div id="top-bar">
+	<div class="wrapper">
+		<div class="span-left">
+			<a href="/main/about_us.html" id="logo">bloggy</a>
+			<!--<img src="bloggy.png" alt="Bloggy Logo" />-->
+		</div><!--end span left-->
+		<div class="span-right">
+		    <p><a href="">log in</a> | <a href="">sign up</a></p>
+		</div><!--end span right-->
+
+		</div>
+</div>
+
+<div class="wrapper">
+<div>
+<nav>
+    <ul>
+    <li>
+        <a href="">Home</a>
+    </li>
+        <li>
+            <%= link_to "About Us", main_about_us_path %>
+    </li>
+		<li>
+    <%= link_to "Our Team", our_team_path %>
+    </li>
+		<li><%= link_to "Vision", vision_path %></li>
+		<li><%= link_to "Blogs", blogs_path %></li>
+		
+        <li>
+            <a href="contact.html">Contact</a>
+    </li>
+</ul>
+</nav>
+</div>
+
+<%= yield %>
+
+</div><!--END WRAPPER-->
+<footer>
+    <div class="wrapper">
+    <ul id="footer">
+        <li><a href="">Home</a></li>
+        <li><%= link_to "About Us", main_about_us_path %></li>
+        <li><a href="contact.html">Contact</a></li>
+				<li><%= link_to "Our Team", our_team_path %></li>
+				<li><%= link_to "Vision", vision_path %></li>
+				<li><%= link_to "Blogs", blogs_path %></li>
+				<li><a href="terms.html">Terms of Service</a></li>
+    </ul>
+		<p>&copy; Copyright 2013 bloggy</p>
+    </div>
+</footer>
+
+</div><!--end container-->
+</body>
+</html>
