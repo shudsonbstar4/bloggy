@@ -121,6 +121,11 @@ td {
 	padding:10px;
 }
 
+.timestamp {
+	font-style: italic;
+	font-size: 0.85em;
+}
+
 /*.edit-links  li {
 	background-color:green;
 	padding:10px;

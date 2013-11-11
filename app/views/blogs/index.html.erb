@@ -21,6 +21,10 @@
     <td class="blog-title"><%= blog.title %></td>
 	</tr>
 	<tr>
+	<!--<td><%= blog.created_at.strftime('%m/%d/%Y %H:%M') %></td>-->
+	<td><span class="timestamp"><%= time_ago_in_words(blog.created_at) %> ago</span></td>
+	</tr>
+	<tr>
 		<td>
 			<ul>
 			<li><strong>Tags:</strong></li>
@@ -30,10 +34,7 @@
 			</ul>
 </td>
 	</tr>
-		<tr>
-	<!--<td><%= blog.created_at.strftime('%m/%d/%Y %H:%M') %></td>-->
-	<td><%= time_ago_in_words(blog.created_at) %> ago</td>
-	</tr>
+		
 	<tr>
 		<td></td>
 	</tr>

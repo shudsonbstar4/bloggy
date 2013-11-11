@@ -18,8 +18,8 @@ Bloggy::Application.routes.draw do
 	
 	get "main/about_us" => 'main#about_us'
 	# or could do get "main/about_us_really" => 'main#about_us'
-	get "main/contact"
-	get "main/terms"
+	get "contact" => "main#contact"
+	get "terms" => "main#terms"
 	get "our-team" => "main#our_team", :as => :our_team
 	get "vision" => "main#vision", :as => :vision
 
